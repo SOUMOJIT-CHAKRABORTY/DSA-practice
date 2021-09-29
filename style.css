@@ -16,6 +16,16 @@ body{
     font-size: 2rem;
     cursor: pointer;
 }
+
+#btn{
+    outline: none;
+    background:none;
+    border:  none;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+}
+
 .popup{
     position: fixed;
     align-items: center;
