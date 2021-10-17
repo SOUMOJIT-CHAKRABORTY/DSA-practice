@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Open+Sans:wght@700&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@700&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Todo App</title>
@@ -11,25 +14,64 @@
 <body>
     <div class="main-header">
     <div class="Header"> 
-        Tasks Lists
+        <span class="Task" style="margin-right: 10px; font-family: 'Inter', sans-serif; font-weight: 800;">Tasks</span>
+        <span class="List" style="margin-left: 10px; font-family: 'Roboto', sans-serif;">List</span>
     </div>
     <div id="Icon-function"> 
-        <button id="btn">
+        <button id="btn" onclick="popapear()">
         <i class="fas fa-2x fa-plus-circle" style="color: rgb(49, 49, 253);"></i>
         </button>
-        Add New Lists
+        Add Item
     </div>
+    </div>
+    <h1 style="color: #ffffff; margin-top: 0; font-family: 'Roboto', sans-serif; font-weight: 200;" id="nolist"> No Items in the todo list</h1>
+
+    <!-- popup 1st -->
+
+
+    <div class="popup" >
+        <div class="popup-body " id="messages">
+        <div id="header" style="color: rgb(252, 42, 84); font-family: 'Inter', sans-serif; font-size: 1.5rem;"> Add New Task</div>
+        <div>
+         <input type="text" style="text-align: center;" id="text-input">
+        </div>
+        <button class="btn add" id="add" onclick="headadd()">Add</button>
+        <button class="btn close" id="close" onclick="popclose()">Close</button>
     </div>
 
-  <!--  <div class="popup">
-        <span></span>
-        <input type="text">
-        <label for="text" style="color: #ffffff;">Add New List</label>
-        <button>Add</button>
-        <button>Close</button>
-    </div>
-     -->
-    <script src="script.js"></script>
-   
+    <!-- popup 2nd -->
+
+     <div class="popup" >
+        <div class="popup-body " id="messages1">
+        <div id="header1" style="color: rgb(252, 42, 84); font-family: 'Inter', sans-serif; font-size: 1.5rem;"> Add New Task</div>
+        <div>
+         <input type="text" style="text-align: center;" id="text-input1">
+        </div>
+        <button class="btn add" id="add1" onclick="head1add()">Add</button>
+        <button class="btn close" onclick="pop1close()" id="close1">Close</button>
+    </div> 
+
+    <!-- card -->
+
+    <div class="Main-container">
+        <div class="Header">
+         
+         </div>
+         <div class="card">
+             <h1 style=" color: black;" id="textinp"></h1>
+             <div class="hr"><hr>
+             </div>
+             <div class="check">
+             <h1 id="textinp1"></h1>
+             </div>
+             <div class="icon2">
+                    <button id="btn-class-del" onclick="carddel()"><i class="fas fa-2x fa-trash-alt" style="color: #ffffff"></i></button>
+                    <button id="btn-class-add"><i class="fas fa-2x fa-plus-circle" style="color: rgb(49, 49, 253);"></i></button>
+             </div>
+         </div>
+     </div>
+
+
+     <script src="script.js"></script>
 </body>
 </html>

@@ -1,10 +1,15 @@
-var messages = document.getElementById("messages");
-var textbox = document.getElementById("textbox");
-var button = document.getElementById("button");
+// var messages = document.getElementById("messages");
+// var textbox = document.getElementById("textbox");
+// var button = document.getElementById("button");
 
-button.addEventListener("click", function(){
-    var newMessage = document.createElement("li");
-    newMessage.innerHTML = textbox.value;
-    messages.appendChild(newMessage);
-    textbox.value = "";
-});
+// button.addEventListener("click", function(){
+//     var newMessage = document.createElement("li");
+//     newMessage.innerHTML = textbox.value;
+//     messages.appendChild(newMessage);
+//     textbox.value = "";
+// });
+let arr = [];
+var add = document.getElementById("add");
+
+let newElement = document.creatElement('div');
+
