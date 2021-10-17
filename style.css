@@ -210,3 +210,11 @@ font-family: 'Roboto', sans-serif;
     text-decoration: line-through;
     color: rgb(252, 42, 84);;
 }
+#text-input1{
+    width: 300px;
+    border: 1px solid red;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px .2px;
+    margin-top: 10px;
+}
