@@ -93,6 +93,7 @@ var button3 = document.getElementById("btn-class-add");
 
 // del button -->
 function carddel () {
+    nolist.style.display="block";
    cards.remove();
 }
 
